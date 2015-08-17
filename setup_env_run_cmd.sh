@@ -2,7 +2,7 @@
 
 USAGE=$'\nUsage: setup_env_run_cmd.sh [-d ".dotkit1 .dotkit2"] "myCommand [myArgs]"'
 USAGE=$USAGE$'\n'
-USAGE=$USAGE$'\n    Ex. /setup_env_run_cmd.sh -d ".python-3.4.3" python -V'
+USAGE=$USAGE$'\n    Ex. setup_env_run_cmd.sh -d ".python-3.4.3" python -V'
 USAGE=$USAGE$'\n'
 
 if [[ "$#" == "0" ]]; then
