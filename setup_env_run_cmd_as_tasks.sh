@@ -9,7 +9,7 @@ USAGE=$USAGE$'\n   Ex. setup_env_run_cmd_as_tasks.sh -d ".python-3.4.3" ./mySamp
 USAGE=$USAGE$'\n'
 USAGE=$USAGE$'\n   Note: This is meant to be called with a UGER command supporting task queues'
 USAGE=$USAGE$'\n   '
-USAGE=$USAGE$'\n   Ex. qsub -q long -t 1-10 setup_env_run_cmd_as_tasks.sh -d ".python-3.4.3" ./mySampleFiles.txt echo SAMPLE_FILENAME'
+USAGE=$USAGE$'\n   Ex. qsub -cwd -q short -t 1-10 setup_env_run_cmd_as_tasks.sh -d ".python-3.4.3" ./mySampleFiles.txt echo SAMPLE_FILENAME'
 
 if [[ "$#" == "0" ]]; then
     echo "$USAGE"
