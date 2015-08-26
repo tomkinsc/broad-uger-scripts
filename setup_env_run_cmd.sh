@@ -30,5 +30,5 @@ while getopts ":d:" opt; do
   esac
 done
 
-eval $@
+eval $@ && exit 0 || exit 100
 

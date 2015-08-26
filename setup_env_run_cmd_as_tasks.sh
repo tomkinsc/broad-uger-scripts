@@ -49,5 +49,5 @@ else
         VAR_REPLACED="${var/SAMPLE_FILENAME/$SAMPLE}"
         COMMAND_TO_RUN="$COMMAND_TO_RUN $VAR_REPLACED"
     done
-    eval $COMMAND_TO_RUN
+    eval $COMMAND_TO_RUN && exit 0 || exit 100
 fi
