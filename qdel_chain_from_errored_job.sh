@@ -110,7 +110,7 @@ echo "==========="
 echo ""
 echo "Target job: $1"
 echo ""
-echo "Successor jobs to kill for which the target is the only dependency:"
+echo "Successor jobs to kill for which the target job chain is the only dependency:"
 for ((idx=${#TO_KILL[@]}-1 ; idx >=0 ; idx-- )); do
     if [[ "${TO_KILL[idx]}" -eq "$TARGET_JOB" ]] ; then
         echo "${TO_KILL[idx]} ($( echo $($MY_PATH/monitoring/job_name.sh ${TO_KILL[idx]}) )) **TARGET**"
