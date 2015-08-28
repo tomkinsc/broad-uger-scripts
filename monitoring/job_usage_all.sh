@@ -11,8 +11,7 @@ MY_PATH="`dirname \"$0\"`"
 
 source $MY_PATH"/use_uger.sh"
 
-for id in $($MY_PATH/list_running_jobs.sh)
-do
+for id in $($MY_PATH/list_running_jobs.sh); do
     echo ""
 	$MY_PATH/job_usage.sh ${id}
 done
